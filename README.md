@@ -1,3 +1,5 @@
 # Solaire
 
-Companion website for Dark Souls: The Board Game.
+Cooperator App for Dark Souls: The Board Game.
+
+**Now in development. 🛠**
