@@ -1,0 +1,43 @@
+:root {
+  --text-color: white;
+  --background-color: black;
+}
+
+html {
+  color: var(--text-color);
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--background-color);
+  padding: 0;
+  margin: 0;
+}
+
+#mainHeader {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+
+#mainHeader > h1,
+h2 {
+  font-family: adobe-garamond-pro, serif;
+  display: inline-block;
+  margin: 0;
+}
+
+#mainTitle {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+#mainSubtitle {
+  font-size: 1.2rem;
+}

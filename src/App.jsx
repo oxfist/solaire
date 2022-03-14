@@ -1,10 +1,9 @@
 import { Helmet } from 'react-helmet'
-
-import './App.css'
+import Home from './Home'
 
 function App() {
   return (
-    <div className="">
+    <div>
       <Helmet>
         <title>
           Solaire | The (jolliest) Cooperator App for{' '}
@@ -22,10 +21,7 @@ function App() {
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="en_US" />
       </Helmet>
-      <header className="">
-        <h1>Dark Souls</h1>
-        <h2>The Board Game</h2>
-      </header>
+      <Home />
       <main />
     </div>
   )
