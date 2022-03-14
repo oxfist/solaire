@@ -1,5 +1,5 @@
-# Solaire
+# Solaire 🌞
 
 Cooperator App for Dark Souls: The Board Game.
 
-**Now in development. 🛠**
+_Now in development_ 🛠
