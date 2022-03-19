@@ -33,7 +33,6 @@ footer {
 }
 
 main.container {
-  padding: 1.5rem;
   height: 100%;
   flex-flow: column wrap;
 }
@@ -54,10 +53,17 @@ main.container {
 }
 
 .action-group {
-  flex-basis: calc(100% - (60% + 1rem));
+  flex-basis: calc(100% - (55% + 1rem));
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
+  justify-content: flex-start;
+  padding: 1em;
+  gap: 5%;
+}
+
+.action-group > button {
+  min-height: 3.5rem;
+  flex-basis: 30%;
 }
 
 #base-container {
@@ -76,7 +82,7 @@ main.container {
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
-  flex-basis: 60%;
+  flex-basis: 55%;
 }
 
 #main-header > h1,
