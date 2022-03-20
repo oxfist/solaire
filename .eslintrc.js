@@ -8,9 +8,10 @@ module.exports = {
     'plugin:react/recommended',
     'airbnb',
     'plugin:react/jsx-runtime',
-    'prettier',
     'plugin:json/recommended',
     'plugin:prettier/recommended',
+    'plugin:jsx-a11y/recommended',
+    'prettier',
   ],
   parserOptions: {
     ecmaFeatures: {
@@ -19,6 +20,6 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', 'prettier'],
+  plugins: ['react', 'prettier', 'jsx-a11y'],
   rules: { 'prettier/prettier': 'error' },
 }
