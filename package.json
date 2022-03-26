@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint . && prettier --check ."
+    "lint": "eslint . && prettier --check . && stylelint \"**/*.css\""
   },
   "dependencies": {
     "@vitejs/plugin-react": "^1.0.7",
@@ -25,6 +25,9 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "prettier": "2.5.1"
+    "prettier": "2.5.1",
+    "stylelint": "^14.6.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^25.0.0"
   }
 }
