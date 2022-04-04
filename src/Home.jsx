@@ -1,5 +1,7 @@
 import './Home.css'
 
+import bonfireUrl from './images/bonfire.png'
+
 export default function Home() {
   return (
     <div id="base-container">
@@ -9,23 +11,28 @@ export default function Home() {
           <p id="main-subtitle">
             An App for Playing <em>Dark Souls: The Board Game</em>
           </p>
+          <img id="bonfire" src={bonfireUrl} alt="Bonfire with a sword" />
         </section>
         <section className="action-group">
           <p>Push Action</p>
-          <button
-            type="button"
-            id="regular-encounter"
-            className="btn btn-encounter"
-          >
-            Regular Encounter
-          </button>
-          <button
-            type="button"
-            id="boss-encounter"
-            className="btn btn-encounter"
-          >
-            Boss or Mini-Boss Encounter
-          </button>
+          <div className="action-buttons">
+            <button
+              type="button"
+              id="regular-encounter"
+              className="btn btn-encounter"
+            >
+              <span className="text-background-black">Regular Encounter</span>
+            </button>
+            <button
+              type="button"
+              id="boss-encounter"
+              className="btn btn-encounter"
+            >
+              <span className="text-background-black">
+                Boss or Mini-Boss Encounter
+              </span>
+            </button>
+          </div>
         </section>
       </main>
       <footer>

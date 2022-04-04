@@ -1,6 +1,7 @@
 :root {
   --text-color: black;
   --website-background-color: #fcf9ee;
+  --action-button-text-color: #ffffff;
   --main-container-height: 90vh;
   --footer-height: 10vh;
 }
@@ -57,24 +58,44 @@ main.container {
   gap: 5%;
 }
 
-.action-group > button {
-  color: white;
+.action-buttons {
+  flex-basis: 80%;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 5%;
+}
+
+.action-buttons > button {
+  color: var(--action-button-text-color);
   min-height: 3.5rem;
   flex-basis: 33%;
   background-clip: border-box;
+  cursor: pointer;
+}
+
+.text-background-black {
+  background-color: black;
+}
+
+#bonfire {
+  height: 12em;
+  margin: -5.5em;
+  z-index: -1;
 }
 
 #regular-encounter {
-  background-image: url('https://i.pinimg.com/originals/72/f5/79/72f579e368e91c7c09412481deb6109b.jpg');
-  background-position: 110% 10%;
-  background-size: 150%;
+  background-image: url('https://trello.com/1/cards/622dfb4ec2667150c367d117/attachments/624a2c183c7bb97079b0888e/previews/624a2c1a3c7bb97079b08925/download/image.png');
+  background-position: 90% 22%;
+  background-size: 120%;
+  border-radius: 20px;
 }
 
 #boss-encounter {
-  background-image: url('https://cdnb.artstation.com/p/assets/images/images/009/775/047/large/sarayu-ruangvesh-sarayu-ruangvesh-ornstein-and-smaug.jpg');
+  background-image: url('https://trello.com/1/cards/622dfb4ec2667150c367d117/attachments/624a2c14781e2b80844fa8e2/previews/624a2c17781e2b80844fa929/download/image.png');
   background-position: 0% 33%;
-  background-size: 100%;
   background-repeat: no-repeat;
+  background-size: 130%;
+  border-radius: 20px;
 }
 
 #base-container {
@@ -90,9 +111,9 @@ main.container {
 #main-header {
   display: flex;
   flex-flow: column wrap;
-  justify-content: center;
   align-items: center;
   margin-top: 1rem;
+  padding-top: 25%;
   flex-basis: 55%;
 }
 
@@ -110,4 +131,32 @@ p {
 
 #main-subtitle {
   font-size: 0.75rem;
+  text-align: center;
+}
+
+@media (min-width: 550px) {
+  #main-header {
+    padding-top: 20%;
+  }
+}
+
+@media (min-width: 800px) {
+  #main-header {
+    padding-top: 10%;
+    flex-basis: 35%;
+  }
+
+  .action-group {
+    margin: 0 2em;
+    z-index: -2;
+  }
+
+  .action-group > p {
+    margin: 0 6em;
+  }
+
+  .action-buttons {
+    flex-flow: row wrap;
+    justify-content: center;
+  }
 }
